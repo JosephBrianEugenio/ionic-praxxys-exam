@@ -53,7 +53,7 @@ const createAccountText = ref("Don’t have an account yet?");
     <IonButton class="login-button" type="button" expand="block"
       >Login</IonButton
     >
-  </div>
+  </div> 
 
   <div class="ion-padding justify-center ion-text-center">
     <Ionbutton

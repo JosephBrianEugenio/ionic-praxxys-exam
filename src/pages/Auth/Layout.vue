@@ -1,9 +1,9 @@
 <template>
-  <ion-page>
-    <ion-content :fullscreen="true" class="auth-content">
+  <IonPage>
+    <IonContent :fullscreen="true" class="auth-content">
       <router-view></router-view>
-    </ion-content>
-  </ion-page>
+    </IonContent>
+  </IonPage>
 </template>
 
 <script setup lang="ts">
