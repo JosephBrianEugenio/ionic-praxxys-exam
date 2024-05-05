@@ -21,8 +21,13 @@
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
     "ionicons": "^7.0.0",
+    "pinia": "^2.1.7",
+    "simple-circular-progress": "^1.0.2",
+    "swiper": "^11.1.1",
     "vue": "^3.3.0",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "vue-virtual-scroller": "^2.0.0-beta.8",
+    "vue3-circle-progress": "^1.0.7"
   },
   "devDependencies": {
     "@capacitor/cli": "6.0.0",
