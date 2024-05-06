@@ -1,12 +1,20 @@
 <script setup lang="ts">
 import { IonIcon, IonText, IonInput, IonButton } from "@ionic/vue";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter()
 
 const heading = ref("Bonjour!");
 const subText = ref(
   "Welcome to all new FastFood mobile app. Kindly login your account. Thank you!"
 );
 const createAccountText = ref("Don’t have an account yet?");
+
+const onHandleRedirect = () => {
+  router.push({name: "home.page"})
+}
+
 </script>
 
 <template>
@@ -50,13 +58,14 @@ const createAccountText = ref("Don’t have an account yet?");
     </IonInput>
   </div>
   <div class="ion-padding">
-    <IonButton class="login-button" type="button" expand="block"
+    <IonButton class="login-button" type="button" expand="block" @click="onHandleRedirect"
       >Login</IonButton
     >
   </div> 
 
   <div class="ion-padding justify-center ion-text-center">
     <Ionbutton
+    @click="onHandleRedirect"
       class="guest-login"
       :collapse="true"
       style="color: red; font-weight: 700"
